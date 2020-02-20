@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ {% load static %}
+ {% block head %}
+ <title>Send SMS</title>
+ {% endblock %}
+  <link rel='stylesheet' href="{% static 'css/user_registration.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+  {% block content %}
+  
+  
+<form action="#" method="POST" id="get_notified">
+  {% csrf_token %}
+  <div class="container">
+    <h1><center>SEND SMS</center></h1>
+    <p>Hello {{user}}. Please write sms to send!</p>
+    <hr>
+
+    <label for="pincode"><b>Pincode</b></label>
+    <input type="text" placeholder="Enter your pincode" name="pincode" required>
+    
+
+<label for="SMS"><b>SMS</label><br><br>
+<input type="text" placeholder="Enter your SMS" name="SMS_send" maxlength="100" required>
+<br><br>
+
+
+
+</select><br><br>
+
+    <hr>
+    
+
+    <button type="submit" class="registerbtn">SEND SMS</button>
+  </div>
+
+
+</form>
+{% endblock %}
+</body>
+</html>

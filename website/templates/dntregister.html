@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ {% load static %}
+ {% block head %}
+ <title>User Registration</title>
+ {% endblock %}
+  <link rel='stylesheet' href="{% static 'css/user_registration.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+  {% block content %}
+ 
+
+<form action="#" method="POST" id="get_notified">
+  {% csrf_token %}
+  <div class="container">
+    <h1><center>Register Here</center></h1>
+    <p>Hello {{user}}. Please fill your details </p>
+    <hr>
+
+    <label for="email"><b>Name</b></label>
+    <input type="text" placeholder="Enter Username" name="person_name" required>
+    
+    <br>
+
+
+ <br>
+
+ <label for="address"><b>Address</label><br><br>
+   <textarea type = "text" rows = "6" cols = "140" name = "address" style="background-color:#f1f1f1;">    </textarea><br><br>
+
+ <label for="pincode"><b>Pincode</label><br><br>
+ <input type="number" placeholder="Enter your area pincode" name="pincode" maxlength="200" required>
+<br><br>
+
+<label for="Contact Number"><b>Contact Number</label><br><br>
+<input type="number" placeholder="Enter your contact number" name="contact_number" maxlength="10" required>
+<br><br>
+
+<label for="email"><b>Email</label><br><br>
+<input type="email" placeholder="Enter your email" name="email" maxlength="100" required>
+<br><br>
+
+<label for="account_sid"><b>Account_sid</label><br><br>
+<input type="text" placeholder="Enter your account_sid" name="account_sid" maxlength="100" required>
+<br><br>
+
+<label for="auth_token"><b>Auth_token</label><br><br>
+<input type="text" placeholder="Enter your auth_token" name="auth_token" maxlength="100" required>
+<br><br>
+
+
+</select><br><br>
+
+    <hr>
+    
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+
+
+</form>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     {% load static %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Disaster Notification Squad</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+     <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="{% static 'css/custom.css' %}" rel="stylesheet">
+
+     <!-- Custom Fonts from Google -->
+     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+     <!-- Navigation -->
+    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                	<span class="glyphicon glyphicon-fire"></span> 
+                	HACK4.0
+                </a>
+            </div>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href={% url "home" %}>Home</a>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="about-us">
+                            <li class="divider"></li>
+                            <li><a href={% url "dntlogin" %}>Login as Notification Squad</a></li>
+                            <li class="divider"></li>
+                            <li><a href={% url "dmtlogin" %}>Login as Management Squad</a></li>
+                        </ul>
+                    </li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Register <span class="caret"></span></a>
+						<ul class="dropdown-menu" aria-labelledby="about-us">
+                            <li><a href={% url "usersign_in" %}>Register as User</a></li>
+                            <li class="divider"></li>
+                            <li><a href={% url "dntsign_in" %}>Register as Notification Squad</a></li>
+                            <li class="divider"></li>
+                            <li><a href={% url "dmtsign_in" %}>Register as Management Squad</a></li>
+						</ul>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                
+            </div><!-- /.navbar-collapse -->
+            
+        </div><!-- /.container -->
+    </nav> 
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Disaster Notifications</h1>
+                <p>To facilitate the communication between those who need help and those who provide help.</p>
+                <a href="#" class="btn btn-primary btn-lg">LOG IN</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Intro Section -->
+    <section class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                	<span class="glyphicon glyphicon-edit" style="font-size: 60px"></span><br><br>
+                    <h2 class="section-heading">Get Notifications when a disaster strikes near you.
+                        <hr>
+                        Or help getting people prepared for the worst.
+                    </h2>
+                    <p class="text-light"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content 1 -->
+    <section class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img class="img-responsive img-circle center-block" src="images/microphone.jpg" alt="nothing">
+                </div>
+                <div class="col-sm-6">
+                	<h2 class="section-header">Help Someone in time of calamity!!</h2>
+                	<p class="lead text-muted">Register as a notification squad and help admin know about the place where some the actual problem has occured and make sure to help and get people prepared in time.
+                    </p>
+                	<a href="#" class="btn btn-primary btn-lg">Register as squad</a>
+                </div>                
+                
+            </div>
+        </div>
+    </section>
+
+   
+
+     <!-- Promos -->
+	<div class="container-fluid">
+        <div class="row promo">
+        	<a href="#">
+				<div class="col-md-4 promo-item item-1">
+					<h3>
+						HELP
+					</h3>
+				</div>
+            </a>
+            <a href="#">
+				<div class="col-md-4 promo-item item-2">
+					<h3>
+						DONATE
+					</h3>
+				</div>
+            </a>
+			
+			<a href="#">
+				<div class="col-md-4 promo-item item-3">
+					<h3>
+						SAVE
+					</h3>
+				</div>
+            </a>
+        </div>
+    </div><!-- /.container-fluid -->
+
+    <!-- Content 3 -->
+    <section class="content content-3">
+        <div class="container">
+            <h2 class="section-header"><span class="glyphicon glyphicon-pushpin text-primary"></span><br><br>
+            About Us </h2>
+            
+			<p class="lead text-muted"> Helping people in any way is the motto of our group. So many people die in time of disasters and calamity not because disasters strike them particularly but because of loss of connection. If you know that disaster striked near you, you would be able to get prepared and hence it is worth trying even if only some lives are saved when thousands of life are taken away in a swash.</p>                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+    
+    	<!-- Contact Us -->
+        <div class="contact">
+        	<div class="container">
+				<h2 class="section-heading">Contact Us</h2>
+				<p><span class="glyphicon glyphicon-earphone"></span><br> +919540927113</p>
+                <p><span class="glyphicon glyphicon-envelope"></span><br> anshusinghjsk@gmail.com</p>
+                
+                <br>
+                
+
+
+        	</div>
+        </div>
+        	
+        <!-- Copyright etc -->
+        <div class="small-print">
+        	<div class="container">
+        		<p>Copyright &copy; Kaira</p>
+        	</div>
+        </div>
+        
+    </footer>
+
+     <!-- jQuery -->
+     <script src="{% static 'js/jquery-1.11.3.min.js' %}"></script>
+
+     <!-- Bootstrap Core JavaScript -->
+     <script src="{% static 'js/bootstrap.min.js' %}"></script>
+ 
+     <!-- Plugin JavaScript -->
+     <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+     
+     <!-- Custom Javascript -->
+     <script src="{% static 'js/custom.js' %}"></script>
+
+</body>
+</html>
+
+    
