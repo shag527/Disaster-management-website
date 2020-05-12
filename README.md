@@ -1,4 +1,8 @@
 DISASTER MANAGEMENT WEBSITE: Pandora
+Pandora, a web based application designed with django and python which aims
+at helping people who get caught in disasters by providing them with HELPLINE numbers through SMS services
+and informing rescue teams about the calamities. Messaging services are provided through Twilio API and front
+end is designed using HTML, CSS, Bootstrap and Java Script.
 Hack-4.0
 #CSEC #NIT_HAMIRPUR
 Team DEVV
@@ -22,6 +26,3 @@ DJANGO
 HTML/CSS/BOOTSTRAP
 TWILIO API
 MYSQL
-
-
-
