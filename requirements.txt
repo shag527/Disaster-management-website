@@ -1,4 +1,4 @@
-django==3.0.3
+django==3.0.7
 django-mysql==3.5.0
 google-auth==1.9.0
 google-auth-oauthlib==0.4.1
