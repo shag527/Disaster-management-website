@@ -9,4 +9,4 @@ requests==2.22.0
 requests-oauthlib==1.3.0
 virtualenv==20.0.4
 virtualenvwrapper-win==1.2.
-twilio==6.35.46
+twilio==6.35.4
