@@ -8,4 +8,5 @@ mysql-connector-python==8.0.19
 requests==2.22.0
 requests-oauthlib==1.3.0
 virtualenv==20.0.4
-virtualenvwrapper-win==1.2.6
+virtualenvwrapper-win==1.2.
+twilio==6.35.46
