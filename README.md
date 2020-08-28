@@ -16,7 +16,7 @@ Django, HTML/CSS/Bootstrap,Twilio API, MySQL Database.
 
 # Getting Started
 ### Pre-requisites
-Before running this project, make sure you have MySQL connection and a Twilio account.
+Before running this project, make sure you have a Twilio account.
 
 ### Run Project
 To run the project, perform the following steps -
