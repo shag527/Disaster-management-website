@@ -9,4 +9,4 @@ PANDORA is a website that aims at helping people who get caught in disasters by 
 ## Technologies used
 DJANGO, HTML/CSS/BOOTSTRAP, TWILIO API, MYSQL
 
-Access the website from this [link] (https://disaster-management-website.herokuapp.com/home/)
+Access the website from this [link](https://disaster-management-website.herokuapp.com/home/)
